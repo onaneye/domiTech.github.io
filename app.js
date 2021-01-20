@@ -20,7 +20,7 @@ var questions = [
         answer: "Random Only Memory",
         options: [
             "Random Access Memory",
-            "Randomly Only Memory",
+            "Random Only Memory",
             "Run Aceecpt Memory",
             "None of these"
         ]
@@ -52,11 +52,15 @@ var quizScore = 0;
 function next(){
 
     let userAnswer = document.querySelector("li.option.active").innerHTML;
-    if(userAnswer === questions[questionCount].answer){
+    if (questionCount == questions.length -1) {
+        location.href = "end.html"
+    }
+    var correctAns = questions[questionCount].answer
+    if(userAnswer === correctAns){
         quizScore= +10;
-        console.log(quizScore);
+        localStorage.setItem("points", quizScore);
     } else{
-        console.log("wrong")
+        console.log("wrong!!!");
     }
     questionCount++;
     show(questionCount);
