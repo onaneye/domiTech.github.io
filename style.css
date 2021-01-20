@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #341f97;
+}
+
+.welcome-text{
+    width: 400px;
+
+}
+
+.welcome-form input,
+.welcome-form button{
+    display: block;
+    width: 100%;
+}
+
+.welcome-form input{
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    text-align: center;
+
+}
+
+.welcome-form button{
+    font-size: 22px;
+    padding: 20px 0;
+    border: none;
+    background-color: #fff;
+    color: #341f97;
+    border-radius: 100px;
+    transition: 0.4s all;
+}
+
+.welcome-form button:hover{
+    transform: translate(-5px);
+    cursor: pointer;
+}
+
+.welcome-form input:focus,
+.welcome-form button:focus{
+    outline: none;
+}
+
+.quiz{
+    border-radius: 3px;
+   display: grid;
+   grid-template-rows: 60px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #fff;
+
+}
+
+.quiz-header{
+    display: flex;
+    justify-content: space-between;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+}
+
+.quiz-body{
+    padding: 30px;
+    background-color: #ececec;
+}
+
+.quiz-user{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 30px;
+}
+.quiz-timer{
+   display: flex;
+   align-items: center;
+   height: 100%;
+   width: 100px;
+   background-color: #341f97;
+   color: #fff;
+   padding: 0 30px; 
+}
+.quiz-body{
+    background-color: #ecf0f1;
+}
+
+.option-group{
+    list-style: none;
+    margin: 30px 0;
+}
+
+.name{
+    color: black;
+    padding: 50px;
+}
+
+.option{
+    background-color: #fff;
+    width: 300px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 100px;
+    border: 2px solid transparent;
+    transition: 00.4s;
+}
+
+.option:hover{
+    cursor: pointer;
+    border: 2px solid #341f97;
+    color: #341f97;
+}
+
+.option.active{
+    background-color: #341f97;
+    color: #fff;
+}
+
+.active{
+    background-color: #341f97;
+}
+
+.btn-next, .btn-previous{
+    border: none;
+    padding: 15px 35px;
+    background-color: #341f97;
+    color: #fff;
+    border-radius: 27px;
+}
+
+.btn-next:hover,
+.btn-previous:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #341f97;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+}
